@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="583.0" style="-fx-background-color: yellow;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.aba.HelloController">
+   <children>
+      <Label layoutX="17.0" layoutY="93.0" text="First Name" />
+      <Label layoutX="19.0" layoutY="132.0" text="Last name" />
+      <Label fx:id="youLabel" layoutX="22.0" layoutY="169.0" prefHeight="20.0" prefWidth="51.0" text="Gender" />
+      <Label fx:id="plabel" layoutX="22.0" layoutY="220.0" prefHeight="20.0" prefWidth="56.0" text="Course" />
+      <Label layoutX="22.0" layoutY="326.0" prefHeight="20.0" prefWidth="82.0" text="Departement" />
+      <TextField fx:id="nameTextField" layoutX="120.0" layoutY="88.0" />
+      <TextField fx:id="lnameTextField" layoutX="120.0" layoutY="127.0" />
+      <RadioButton fx:id="rButton1" layoutX="119.0" layoutY="169.0" mnemonicParsing="false" onAction="#getGender" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="Gender" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rButton2" layoutX="196.0" layoutY="169.0" mnemonicParsing="false" onAction="#getGender" text="Female" toggleGroup="$Gender" />
+      <CheckBox fx:id="javaBox" layoutX="121.0" layoutY="220.0" mnemonicParsing="false" onAction="#HandleCourse" text="Java" />
+      <CheckBox fx:id="pythonBox" layoutX="121.0" layoutY="250.0" mnemonicParsing="false" onAction="#HandleCourse" text="Python" />
+      <CheckBox fx:id="JavaScript" layoutX="121.0" layoutY="284.0" mnemonicParsing="false" onAction="#HandleCourse" text="Javascript" />
+      <ChoiceBox fx:id="dept" layoutX="121.0" layoutY="321.0" prefWidth="150.0" />
+      <Button layoutX="63.0" layoutY="377.0" mnemonicParsing="false" onAction="#onHelloButtonClick" text="save" />
+      <Button layoutX="190.0" layoutY="377.0" mnemonicParsing="false" text="clear" />
+      <Label fx:id="welcomeLabel" layoutX="340.0" layoutY="132.0" prefHeight="244.0" prefWidth="240.0" />
+      <Label layoutX="21.0" layoutY="4.0" prefHeight="65.0" prefWidth="533.0" text="       REGISTRATION FORM">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+      <Label layoutX="409.0" layoutY="134.0" prefHeight="30.0" prefWidth="121.0" text="Summery">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
